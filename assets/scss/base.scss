@@ -41,3 +41,16 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.btn {
+  background-color: variables.$color-gold;
+  color: variables.$color-white;
+  font-family: Ubuntu-Medium;
+  border-radius: variables.$base-border-radius;
+  padding: 1em 5.4em;
+  transition: variables.$base-transition;
+
+  &:hover {
+    background-color: variables.$color-brown;
+  }
+}
