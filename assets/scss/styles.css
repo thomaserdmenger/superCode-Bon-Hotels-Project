@@ -83,7 +83,6 @@ header img {
 }
 header nav {
   display: flex;
-  gap: 3rem;
   gap: 3.5vw;
 }
 header nav a {
@@ -101,7 +100,7 @@ header nav svg {
   background-size: cover;
   color: #ffffff;
   padding-block: 20rem 7.5rem;
-  margin-block-end: 1.5rem;
+  margin-block-end: 4rem;
 }
 .section-hero p {
   margin-block-end: 4rem;
@@ -115,6 +114,7 @@ header nav svg {
   align-items: center;
   gap: 3rem;
   padding-inline: 10%;
+  margin-block-end: 6rem;
 }
 .section-facilities .facilities-items {
   display: flex;
@@ -124,10 +124,68 @@ header nav svg {
 }
 .section-facilities .facilities-items img {
   width: 60px;
+  margin-block-end: 1rem;
 }
 .section-facilities .facilities-items p {
   font-family: Ubuntu-Light;
   color: #957554;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-facilities .facilities-items {
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-facilities .facilities-items {
+    column-gap: 5rem;
+    row-gap: 2rem;
+  }
+}
+.section-rooms {
+  text-align: center;
+  margin-block-end: 6rem;
+}
+.section-rooms h2 {
+  margin-block-end: 2rem;
+}
+.section-rooms .rooms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-inline: 5%;
+}
+.section-rooms .rooms-grid article {
+  border-radius: 10px;
+  padding-block: 18.8rem 5rem;
+}
+.section-rooms .rooms-grid article h3 {
+  margin-block-end: 3rem;
+}
+.section-rooms .rooms-grid article a {
+  padding: 1em 2.5em;
+}
+.section-rooms .rooms-grid article:nth-of-type(1) {
+  background: url(../images/standard_twin_room.png) no-repeat center;
+  background-size: cover;
+}
+.section-rooms .rooms-grid article:nth-of-type(2) {
+  background: url(../images/standard_room.png) no-repeat center;
+  background-size: cover;
+}
+.section-rooms .rooms-grid article:nth-of-type(3) {
+  background: url(../images/standard_view_room.png) no-repeat center;
+  background-size: cover;
+}
+.section-rooms .rooms-grid article:nth-of-type(4) {
+  background: url(../images/deluxe_room.png) no-repeat center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-rooms .rooms-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
