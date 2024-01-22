@@ -40,16 +40,42 @@ header {
   background-size: cover;
   color: variables.$color-white;
   padding-block: 20rem 7.5rem;
-
-  h1 {
-    font-size: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem);
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-block-end: 1rem;
-  }
+  margin-block-end: 1.5rem;
 
   p {
     margin-block-end: 4rem;
     font-family: Ubuntu-Medium;
   }
 }
+
+// ! Section Facilities
+
+.section-facilities {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-inline: 10%;
+
+  .facilities-items {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    flex-wrap: wrap;
+
+    img {
+      width: 60px;
+    }
+
+    p {
+      font-family: Ubuntu-Light;
+      color: variables.$color-brown;
+    }
+  }
+}
+
+// .facilities-grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+// }

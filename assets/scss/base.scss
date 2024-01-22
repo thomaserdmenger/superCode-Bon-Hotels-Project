@@ -42,6 +42,25 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-block-end: 1rem;
+}
+
+h2 {
+  color: variables.$color-brown;
+  font-size: clamp(1.40625rem, 0.9111rem + 2.1127vw, 2.8125rem);
+  font-family: Ubuntu-Medium;
+}
+
+h3 {
+  font-family: Ubuntu-Medium;
+  color: variables.$color-white;
+  font-size: clamp(1.25rem, 0.8099rem + 1.8779vw, 2.5rem);
+}
+
 .btn {
   background-color: variables.$color-gold;
   color: variables.$color-white;
