@@ -39,11 +39,16 @@ a {
   text-decoration: none;
 }
 
+input {
+  font-size: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
+}
+
 h1 {
   font-size: clamp(2.5rem, 1.6197rem + 3.7559vw, 5rem);
   text-transform: uppercase;
   font-weight: 400;
   margin-block-end: 1rem;
+  padding-inline: 1rem;
 }
 
 h2 {
@@ -58,6 +63,10 @@ h3 {
   font-size: clamp(1.25rem, 0.8099rem + 1.8779vw, 2.5rem);
 }
 
+ul {
+  list-style: none;
+}
+
 .btn {
   background-color: #dfaa5b;
   color: #ffffff;
@@ -65,6 +74,7 @@ h3 {
   border-radius: 10px;
   padding: 1em 5.4em;
   transition: 0.5s;
+  border: none;
 }
 .btn:hover {
   background-color: #957554;
@@ -197,6 +207,67 @@ header nav svg {
 }
 .section-book h2 {
   margin-block: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #ffffff;
+  background-color: #111;
+  padding-block: 6rem;
+}
+.footer-grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10%;
+}
+.footer-grid div ul {
+  padding-inline-start: 1.2rem;
+}
+.footer-grid div:nth-of-type(1) img {
+  width: 154px;
+  margin-block: -1.5rem 2rem;
+}
+.footer-grid div:nth-of-type(1) ul li {
+  font-family: Ubuntu-Light;
+  margin-block-end: 0.3rem;
+}
+.footer-grid div:nth-of-type(1) ul li:nth-of-type(1) {
+  font-family: Ubuntu-Medium;
+}
+.footer-grid div:nth-of-type(2) ul li {
+  font-family: Ubuntu-Light;
+  margin-block-end: 1rem;
+}
+.footer-grid div:nth-of-type(3) p {
+  font-family: Ubuntu-Medium;
+  font-size: clamp(0.9375rem, 0.6074rem + 1.4085vw, 1.875rem);
+  margin-block-end: 1rem;
+}
+.footer-grid div:nth-of-type(3) form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+.footer-grid div:nth-of-type(3) form input {
+  padding: 1rem;
+  border-radius: 10px;
+}
+.footer-grid div:nth-of-type(3) form input[type=email] {
+  font-family: Ubuntu-Light;
+}
+.footer-grid div:nth-of-type(3) form input[type=submit] {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding-block: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
