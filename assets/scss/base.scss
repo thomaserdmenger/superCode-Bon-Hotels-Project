@@ -27,6 +27,11 @@ html {
   font-family: Ubuntu-Regular;
 }
 
+.wrapper {
+  min-height: 100vh;
+  font-size: variables.$base-font-size;
+}
+
 img {
   max-width: 100%;
 }

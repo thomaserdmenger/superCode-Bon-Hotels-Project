@@ -24,6 +24,11 @@ html {
   font-family: Ubuntu-Regular;
 }
 
+.wrapper {
+  min-height: 100vh;
+  font-size: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
+}
+
 img {
   max-width: 100%;
 }
@@ -32,6 +37,31 @@ a {
   color: unset;
   cursor: pointer;
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4.75rem;
+  align-items: center;
+  padding-block: 3.2rem 6.3rem;
+  text-align: center;
+}
+header img {
+  max-width: 9.375rem;
+}
+header nav {
+  display: flex;
+  gap: 3rem;
+  gap: 3.5vw;
+}
+header nav a {
+  color: #957554;
+  font-family: Ubuntu-Medium;
+}
+header nav svg {
+  width: 16px;
+  fill: #dfaa5b;
 }
 
 /*# sourceMappingURL=styles.css.map */

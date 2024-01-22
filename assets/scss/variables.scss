@@ -1,4 +1,10 @@
+// ! Colors
+
 $color-black: #000000;
 $color-brown: #957554;
 $color-gold: #dfaa5b;
 $color-white: #ffffff;
+
+// ! Font-Sizes
+
+$base-font-size: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
